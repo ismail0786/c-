@@ -1,0 +1,31 @@
+using System;
+namespace GenericsDemo
+{
+    public class ClsMain
+    {
+        private static void Main()
+        {
+           // bool IsEqual = ClsCalculator.AreEqual(10, 20);
+            bool a = ClsCalculator.AreEqual("ABC", "ABC");
+            if (a)
+            {
+                Console.WriteLine("Both are Equal");
+            }
+            else
+            {
+                Console.WriteLine("Both are Not Equal");
+            }
+            Console.ReadKey();
+        }
+    }
+
+    public class ClsCalculator
+    {
+        //Now this method can accept any data type
+                     // <T> AreEual(T value1, T value2)         
+        public static bool AreEqual(object value1, object value2)
+        {
+            return value1 == value2;
+        }
+    }
+}
