@@ -4,7 +4,8 @@ namespace classes{
     class program{
 
         static void Main(string[] args){
-            console.WriteLine("Hi");
+            Console.WriteLine("Hi");
+            Console.WriteLine("Hello");
         }
     }
 }
